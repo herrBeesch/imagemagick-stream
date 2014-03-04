@@ -125,6 +125,18 @@ ImageMagick.prototype = {
   },
   
   /**
+   * Sets the `extend` option
+   *
+   * @param {String} args
+   * @api public
+   */
+   
+  extend: function (args) {
+    this.args.push('-extend', args);
+    return this;
+  },
+  
+  /**
    * Sets the `define` option
    *
    * @param {String} args

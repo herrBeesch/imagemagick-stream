@@ -131,8 +131,8 @@ ImageMagick.prototype = {
    * @api public
    */
    
-  extend: function (args) {
-    this.args.push('-extend', args);
+  extent: function (args) {
+    this.args.push('-extent', args);
     return this;
   },
   

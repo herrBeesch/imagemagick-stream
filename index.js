@@ -119,7 +119,7 @@ ImageMagick.prototype = {
    * @api public
    */
    
-  scale: function (args) {
+  background: function (args) {
     this.args.push('-background', args);
     return this;
   },

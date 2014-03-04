@@ -113,6 +113,18 @@ ImageMagick.prototype = {
   },
   
   /**
+   * Sets the `background` option
+   *
+   * @param {String} args
+   * @api public
+   */
+   
+  scale: function (args) {
+    this.args.push('-background', args);
+    return this;
+  },
+  
+  /**
    * Sets the `crop` option
    *
    * @param {String} args

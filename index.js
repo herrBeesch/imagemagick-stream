@@ -125,6 +125,18 @@ ImageMagick.prototype = {
   },
   
   /**
+   * Sets the `define` option
+   *
+   * @param {String} args
+   * @api public
+   */
+   
+  define: function (args) {
+    this.args.push('-define', args);
+    return this;
+  },
+  
+  /**
    * Sets the `crop` option
    *
    * @param {String} args
